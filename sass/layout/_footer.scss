@@ -1,0 +1,32 @@
+.footer {
+    background-color: $color-black;
+    padding-top: 2rem;
+    &__copyright {
+        color: lighten($color-black, 20%);
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    &__lists {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 2rem;
+    }
+    &__list {
+        text-align: center;
+    }
+    &__item {
+        margin-top: 1em;
+    }
+    &__link {
+        color: $color-gray;
+        padding: .34rem;
+        transition: all .2s;
+        &:hover {
+            color: $color-white;
+        }
+    }
+    &__header {
+        color: $color-yellow;
+        margin: 1rem 0;
+    }
+}
