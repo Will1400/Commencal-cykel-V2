@@ -12,6 +12,7 @@
         color: $color-black;
         padding: 18px 15px;
         margin: 0 5px;
+        transition: all .3s;
         &:hover {
             background-color: darken($color-yellow, 20%);
         }
