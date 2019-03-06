@@ -5,3 +5,18 @@
 .contain {
     padding: 0 18vw;
 }
+@media only screen and (max-width: 1200px) {
+    .contain {
+        padding: 0 16vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .contain {
+        padding: 0 8vw;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .contain {
+        padding: 0;
+    }
+}
