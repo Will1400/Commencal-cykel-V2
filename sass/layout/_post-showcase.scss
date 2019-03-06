@@ -1,0 +1,21 @@
+.post-showcase {
+    display: flex;
+    background-color: $color-light-gray;
+    &__video {
+        margin: 2rem 0;
+        margin-right: 2rem;
+        width: 80%;
+    }
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.post {
+    margin: 2rem 0;
+    &__title {
+        margin-bottom: 1rem;
+    }
+}
