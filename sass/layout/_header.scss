@@ -1,0 +1,9 @@
+.header {
+    &__logo-box {
+        background-color: $color-black;
+    }
+    &__logo {
+        margin: auto;
+        padding: 1rem 0;
+    }
+}
