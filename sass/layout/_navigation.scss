@@ -9,6 +9,7 @@
         display: flex;
     }
     &__link {
+        color: $color-black;
         padding: 18px 15px;
         margin: 0 5px;
         &:hover {
