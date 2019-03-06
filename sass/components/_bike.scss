@@ -8,3 +8,15 @@
         text-align: center;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .bike {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .bike {
+        width: 100%;
+    }
+}
