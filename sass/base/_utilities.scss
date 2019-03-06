@@ -2,8 +2,6 @@
     text-transform: uppercase;
 }
 
-a:link,
-a:visited {
-    text-decoration: none;
-    color: $color-black;
+.contain {
+    padding: 0 20vw;
 }
