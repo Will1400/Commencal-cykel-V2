@@ -1,3 +1,18 @@
 .navigation {
     background-color: $color-yellow;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+
+    &__list {
+        display: flex;
+    }
+    &__link {
+        padding: 18px 15px;
+        margin: 0 5px;
+        &:hover {
+            background-color: darken($color-yellow, 20%);
+        }
+    }
 }
