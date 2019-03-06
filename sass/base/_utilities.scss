@@ -1,0 +1,9 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: $color-black;
+}
