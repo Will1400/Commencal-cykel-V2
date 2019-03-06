@@ -30,3 +30,14 @@
         margin: 1rem 0;
     }
 }
+
+@media only screen and (max-width:500px) {
+    .footer {
+        &__lists {
+            flex-direction: column;
+        }
+        &__list {
+            margin: 1rem;
+        }
+    }
+}
