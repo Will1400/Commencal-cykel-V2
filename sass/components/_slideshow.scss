@@ -2,7 +2,7 @@
     overflow: hidden;
     &__wrapper {
         display: flex;
-        width: 300vw;
+        width: 300vw; // 300vw because there is 3 images so they each have 100vw;
         animation: slide 20s ease infinite;
     }
     &__slide {
