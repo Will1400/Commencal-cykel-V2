@@ -29,6 +29,7 @@
         right: 10px;
         color: white;
         font-size: 2rem;
+        display: none;
     }
 }
 
@@ -43,6 +44,9 @@
         transition: all .5s;
         width: 100%;
         overflow: hidden;
+        &__burger--icon {
+            display: inline-block;
+        }
         &__burger--checkbox:checked~.navigation {
             visibility: visible;
             height: 100%;
