@@ -2,15 +2,15 @@
 
 @import "base/base";
 @import "base/typography";
-@import "base/animations";
 @import "base/utilities";
+@import "base/animations";
 
-@import "components/bike";
 @import "components/slideshow";
+@import "components/bike";
 
 @import "layout/header";
 @import "layout/navigation";
-@import "layout/footer";
 @import "layout/bike-showcase";
 @import "layout/post-showcase";
+@import "layout/footer";
 
