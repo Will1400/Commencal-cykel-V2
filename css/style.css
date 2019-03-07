@@ -38,6 +38,16 @@ p,
 .footer__link {
   font-size: 1.4rem; }
 
+@keyframes slide {
+  0%, 25% {
+    transform: translateX(0); }
+  33%, 55% {
+    transform: translateX(-100vw); }
+  66%, 85% {
+    transform: translateX(-200vw); }
+  99% {
+    transform: translateX(0); } }
+
 .uppercase {
   text-transform: uppercase; }
 
@@ -77,10 +87,16 @@ p,
   .bike {
     width: 100%; } }
 
-.slideshow__slide {
-  width: 100vw;
-  height: 350px;
-  object-fit: cover; }
+.slideshow {
+  overflow: hidden; }
+  .slideshow__wrapper {
+    display: flex;
+    width: 300vw;
+    animation: slide 20s ease infinite; }
+  .slideshow__slide {
+    width: 100vw;
+    height: 380px;
+    object-fit: cover; }
 
 .header {
   background-color: #0e0c0c;
