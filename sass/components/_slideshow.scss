@@ -1,7 +1,13 @@
 .slideshow {
+    overflow: hidden;
+    &__wrapper {
+        display: flex;
+        width: 300vw;
+        animation: slide 20s ease infinite;
+    }
     &__slide {
         width: 100vw;
-        height: 350px;
+        height: 380px;
         object-fit: cover;
     }
 }
