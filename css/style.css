@@ -18,6 +18,9 @@ img {
   display: block;
   max-width: 100%; }
 
+html {
+  font-family: 'Roboto', sans-serif; }
+
 h1 {
   font-size: 3.6rem; }
 
@@ -55,11 +58,16 @@ p,
 
 .bike {
   width: 25%;
-  padding: 2rem; }
+  padding: 2rem;
+  transition: all .2s; }
   .bike__img {
     width: 100%; }
   .bike__title {
     text-align: center; }
+  .bike:hover {
+    box-shadow: 3px 3px 1rem rgba(14, 12, 12, 0.6);
+    transform: scale(1.05);
+    cursor: pointer; }
 
 @media only screen and (max-width: 800px) {
   .bike {
@@ -69,14 +77,32 @@ p,
   .bike {
     width: 100%; } }
 
+.slideshow__slide {
+  width: 100vw;
+  height: 350px;
+  object-fit: cover; }
+
 .header {
-  background-color: #0e0c0c; }
+  background-color: #0e0c0c;
+  position: relative;
+  z-index: 99; }
   .header__logo-box {
     height: 68px;
     margin: auto;
     width: 240px; }
   .header__logo {
     padding: 1rem 0; }
+
+@media only screen and (max-width: 650px) {
+  .header {
+    transition: all .2s;
+    position: sticky;
+    top: 0; }
+    .header__logo-box {
+      height: 60px;
+      width: 200px; }
+    .header__logo {
+      height: 60px; } }
 
 .navigation {
   background-color: #ffff32;
@@ -87,12 +113,57 @@ p,
   .navigation__list {
     display: flex; }
   .navigation__link {
+    display: block;
     color: #0e0c0c;
-    padding: 18px 15px;
+    padding: 16px 15px;
     margin: 0 5px;
-    transition: all .3s; }
+    transition: all .2s; }
     .navigation__link:hover {
       background-color: #cbcb00; }
+
+.navigation__burger--checkbox {
+  display: none; }
+
+.navigation__burger--icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  display: none;
+  cursor: pointer; }
+  .navigation__burger--icon .bar {
+    height: 2px;
+    width: 25px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all .5s; }
+
+@media only screen and (max-width: 650px) {
+  .navigation {
+    position: fixed;
+    top: 60px;
+    z-index: 99;
+    visibility: hidden;
+    display: block;
+    height: 0;
+    transition: all .5s;
+    width: 100%;
+    overflow: hidden; }
+    .navigation__burger--icon {
+      display: inline-block; }
+    .navigation__burger--checkbox:checked ~ .navigation__burger--icon .bar:nth-child(1) {
+      transform: rotate(-45deg) translate(-9px, 4px); }
+    .navigation__burger--checkbox:checked ~ .navigation__burger--icon .bar:nth-child(2) {
+      opacity: 0; }
+    .navigation__burger--checkbox:checked ~ .navigation__burger--icon .bar:nth-child(3) {
+      transform: rotate(45deg) translate(-8px, -2px); }
+    .navigation__burger--checkbox:checked ~ .navigation {
+      visibility: visible;
+      height: 100%; }
+    .navigation__list {
+      display: block;
+      margin-bottom: 2rem; }
+    .navigation__item {
+      text-align: center; } }
 
 .footer {
   background-color: #0e0c0c;
@@ -129,6 +200,10 @@ p,
   display: flex;
   flex-wrap: wrap;
   margin: 2rem 0; }
+
+@media only screen and (max-width: 740px) {
+  .bike-showcase {
+    padding: 0 2rem; } }
 
 .post-showcase {
   display: flex;
