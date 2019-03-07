@@ -4,17 +4,55 @@
     height: 5rem;
     align-items: center;
     justify-content: space-between;
-
     &__list {
         display: flex;
     }
     &__link {
+        display: block;
         color: $color-black;
-        padding: 18px 15px;
+        padding: 17px 15px;
         margin: 0 5px;
-        transition: all .3s;
+        transition: all .2s;
         &:hover {
             background-color: darken($color-yellow, 20%);
+        }
+    }
+}
+
+.navigation__burger {
+    &--checkbox {
+        display: none;
+    }
+    &--icon {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .navigation {
+        position: fixed;
+        top: 60px;
+        z-index: 99;
+        visibility: hidden;
+        display: block;
+        height: 0;
+        transition: all .5s;
+        width: 100%;
+        overflow: hidden;
+        &__burger--checkbox:checked~.navigation {
+            visibility: visible;
+            height: 100%;
+        }
+        &__list {
+            display: block;
+            margin-bottom: 2rem;
+        }
+        &__item {
+            text-align: center;
         }
     }
 }

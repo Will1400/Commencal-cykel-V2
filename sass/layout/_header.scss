@@ -1,5 +1,6 @@
 .header {
     background-color: $color-black;
+    position: relative;
     &__logo-box {
         height: 68px;
         margin: auto;
@@ -7,5 +8,20 @@
     }
     &__logo {
         padding: 1rem 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header {
+        transition: all .2s;
+        position: sticky;
+        top: 0;
+        &__logo-box {
+            height: 60px;
+            width: 200px;
+        }
+        &__logo {
+            height: 60px;
+        }
     }
 }
