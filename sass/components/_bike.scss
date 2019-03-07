@@ -2,6 +2,10 @@
     width: 25%;
     padding: 2rem;
     transition: all .2s;
+    // To stop shakyness in Edge
+    @supports (-ms-ime-align:auto)  {
+        transition: box-shadow .18s;
+    }
     &__img {
         width: 100%;
     }
