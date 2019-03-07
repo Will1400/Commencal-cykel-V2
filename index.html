@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
+
+
 </head>
 
 <body>
@@ -36,8 +42,10 @@
             </nav>
         </header>
 
-        <section class="hero">
-            <img src="img/slider/1.jpg" alt="Bike showcase" class="hero__img">
+        <section class="slideshow">
+            <div class="slideshow__wrapper">
+                <img src="img/slider/1.jpg" alt="Bike showcase" class="slideshow__slide">
+            </div>
         </section>
 
         <main class="main-content">
@@ -78,7 +86,7 @@
 
             <section class="post-showcase contain">
                 <!-- <img class="post-showcase__video" src="img/video-placeholder.png" alt="video"> -->
-                <iframe class="post-showcase__video" src="https://player.vimeo.com/video/179161043"  frameborder="0"
+                <iframe class="post-showcase__video" src="https://player.vimeo.com/video/179161043" frameborder="0"
                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 <div class="post-showcase__posts">
                     <article class="post">
@@ -127,6 +135,16 @@
         </footer>
 
     </div>
+
+    <script>
+        ScrollReveal().reveal('.bike', {
+            scale: 0.65,
+            opacity: 0,
+            origin: "left",
+            distance: '100px',
+            duration: 350
+        });
+    </script>
 </body>
 
 </html>
