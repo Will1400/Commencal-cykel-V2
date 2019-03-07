@@ -1,6 +1,7 @@
 .header {
     background-color: $color-black;
     position: relative;
+    z-index: 99;
     &__logo-box {
         height: 68px;
         margin: auto;
