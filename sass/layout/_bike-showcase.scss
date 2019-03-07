@@ -3,3 +3,10 @@
     flex-wrap: wrap;
     margin: 2rem 0;
 }
+
+@media only screen and(max-width: 740px) {
+    .bike-showcase {
+        padding: 0 2rem;
+    }
+}
+
